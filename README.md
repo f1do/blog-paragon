@@ -1,4 +1,4 @@
-# 🚩 Pablo Aragón | Infosec & Programming Journey
+# 🚩 Paragon | Infosec & Programming Journey
 
 ![Hugo](https://img.shields.io/badge/Static_Site_Generator-Hugo-blueviolet?style=for-the-badge&logo=hugo)
 ![Theme](https://img.shields.io/badge/Theme-Terminal-green?style=for-the-badge)
