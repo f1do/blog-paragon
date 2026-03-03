@@ -2,6 +2,8 @@ baseURL = 'http://localhost:1313/'
 languageCode = 'es-es'
 title = 'Mi experiencia Paragon'
 theme = 'terminal'
+relativeURLs = true
+canonifyURLs = false
 [params]
   author = 'Pablo Aragón'
   showMenuItems = 2
