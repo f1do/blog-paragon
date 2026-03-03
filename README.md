@@ -1,4 +1,4 @@
-# 🚩 Pablo Aragón | Infosec & Programming Journey
+# 🚩 Paragon | Infosec & Programming Journey
 
 ![Hugo](https://img.shields.io/badge/Static_Site_Generator-Hugo-blueviolet?style=for-the-badge&logo=hugo)
 ![Theme](https://img.shields.io/badge/Theme-Terminal-green?style=for-the-badge)
@@ -15,7 +15,7 @@ Bienvenido a mi repositorio de documentación técnica. Aquí gestiono el códig
 * **HackerRank Challenges:** Soluciones optimizadas en diversos lenguajes de programación.
 * **Security Research:** Notas sobre vulnerabilidades, herramientas de seguridad y scripts propios.
 
-## 🛠️ Stack Tecnológico
+## 🛠�?Stack Tecnológico
 - **Engine:** [Hugo](https://gohugo.io/) (Extended Version)
 - **Theme:** [Terminal](https://github.com/panr/hugo-theme-terminal)
 - **Host:** Servidor Linux con cPanel
