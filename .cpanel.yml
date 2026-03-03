@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home3/recopubb/pablo.aragon.mx/
+    - /bin/cp -R public/* $DEPLOYPATH

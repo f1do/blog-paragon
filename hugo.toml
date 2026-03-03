@@ -1,0 +1,12 @@
+baseURL = 'http://localhost:1313/'
+languageCode = 'es-es'
+title = 'Mi experiencia Paragon'
+theme = 'terminal'
+[params]
+  author = 'Pablo Aragón'
+  showMenuItems = 2
+  fullWidthTheme = true
+  centerTheme = true
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
