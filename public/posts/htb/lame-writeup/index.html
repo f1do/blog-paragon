@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>HTB | Lame :: Mi experiencia Paragon</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="1# Escaneo rápido de puertos 2$ nmap -sC -sV -oA nmap/lame 10.10.10.3 3 4PORT STATE SERVICE VERSION 521/tcp open ftp vsftpd 2.3.4 622/tcp open ssh OpenSSH 4.7p1 Debian 8ubuntu1 (protocol 2.0) 7139/tcp open netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP) 8445/tcp open microsoft-ds Samba smbd 3.0.20-Debian (workgroup: WORKGROUP) " />
+<meta name="keywords" content="" />
+
+  <meta name="robots" content="noodp" />
+
+<link rel="canonical" href="https://pablo.aragon.mx/posts/htb/lame-writeup/" />
+
+
+
+
+
+  
+  <link rel="stylesheet" href="https://pablo.aragon.mx/css/syntax.min.8daf0ac0a31a3c5489d18360c2aa3459d3a0a2de01e281b7a3ab7d2b2eb6d617.css">
+
+  
+  <link rel="stylesheet" href="https://pablo.aragon.mx/css/buttons.min.86f6b4c106b6c6eb690ae5203d36b442c1f66f718ff4e8164fa86cf6c61ad641.css">
+
+  
+  <link rel="stylesheet" href="https://pablo.aragon.mx/css/code.min.c4581949edab7810737609fc5568852bcd908945f14561e366dcd2300a370545.css">
+
+  
+  <link rel="stylesheet" href="https://pablo.aragon.mx/css/fonts.min.5bb7ed13e1d00d8ff39ea84af26737007eb5051b157b86fc24487c94f3dc8bbe.css">
+
+  
+  <link rel="stylesheet" href="https://pablo.aragon.mx/css/footer.min.eb8dfc2c6a7eafa36cd3ba92d63e69e849e2200e0002a228d137f236b09ecd75.css">
+
+  
+  <link rel="stylesheet" href="https://pablo.aragon.mx/css/gist.min.a751e8b0abe1ba8bc53ced52a38b19d8950fe78ca29454ea8c2595cf26aad5c0.css">
+
+  
+  <link rel="stylesheet" href="https://pablo.aragon.mx/css/header.min.75c7eb0e2872d95ff48109c6647d0223a38db52e2561dd87966eb5fc7c6bdac6.css">
+
+  
+  <link rel="stylesheet" href="https://pablo.aragon.mx/css/main.min.36833afd348409fc6c3d09d0897c5833d9d5bf1ff31f5e60ea3ee42ce2b1268c.css">
+
+  
+  <link rel="stylesheet" href="https://pablo.aragon.mx/css/menu.min.3c17467ebeb3d38663dce68f71f519901124fa5cbb4519b2fb0667a21e9aca39.css">
+
+  
+  <link rel="stylesheet" href="https://pablo.aragon.mx/css/pagination.min.bbb986dbce00a5ce5aca0504b7925fc1c581992a4bf57f163e5d69cc1db7d836.css">
+
+  
+  <link rel="stylesheet" href="https://pablo.aragon.mx/css/post.min.e6dddd258e64c83e05cec0cd49c05216742d42fc8ecbfbe6b67083412b609bd3.css">
+
+  
+  <link rel="stylesheet" href="https://pablo.aragon.mx/css/terminal.min.1e28eaacbc30d8f3a59d3de3690cbc84c7ec7e18179112707cf578e2e1e515c4.css">
+
+  
+  <link rel="stylesheet" href="https://pablo.aragon.mx/css/terms.min.b81791663c3790e738e571cdbf802312390d30e4b1d8dc9d814a5b5454d0ac11.css">
+
+
+
+
+
+
+
+<link rel="shortcut icon" href="https://pablo.aragon.mx/favicon.png">
+<link rel="apple-touch-icon" href="https://pablo.aragon.mx/apple-touch-icon.png">
+
+
+<meta name="twitter:card" content="summary" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="HTB | Lame">
+<meta property="og:description" content="1# Escaneo rápido de puertos 2$ nmap -sC -sV -oA nmap/lame 10.10.10.3 3 4PORT STATE SERVICE VERSION 521/tcp open ftp vsftpd 2.3.4 622/tcp open ssh OpenSSH 4.7p1 Debian 8ubuntu1 (protocol 2.0) 7139/tcp open netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP) 8445/tcp open microsoft-ds Samba smbd 3.0.20-Debian (workgroup: WORKGROUP) " />
+<meta property="og:url" content="https://pablo.aragon.mx/posts/htb/lame-writeup/" />
+<meta property="og:site_name" content="Mi experiencia Paragon" />
+
+  <meta property="og:image" content="https://pablo.aragon.mx/og-image.png">
+
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+
+
+  <meta property="article:published_time" content="2026-03-03 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+
+
+<div class="container center">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="https://pablo.aragon.mx/">
+  <div class="logo">
+    Terminal
+  </div>
+</a>
+
+    </div>
+    
+      <ul class="menu menu--mobile">
+  <li class="menu__trigger">Menu&nbsp;▾</li>
+  <li>
+    <ul class="menu__dropdown">
+      
+        
+          <li><a href="../../../about/">Acerca</a></li>
+        
+      
+      
+    </ul>
+  </li>
+</ul>
+
+    
+    
+  </div>
+  
+    <nav class="navigation-menu">
+  <ul class="navigation-menu__inner menu--desktop">
+    
+      
+        
+          <li><a href="../../../about/" >Acerca</a></li>
+        
+      
+      
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<article class="post">
+  <h1 class="post-title">
+    <a href="https://pablo.aragon.mx/posts/htb/lame-writeup/">HTB | Lame</a>
+  </h1>
+  <div class="post-meta"><time class="post-date">2026-03-03</time><span class="post-author">paragon</span></div>
+
+  
+    <span class="post-tags">
+      
+      #<a href="https://pablo.aragon.mx/tags/retired/">Retired</a>&nbsp;
+      
+      #<a href="https://pablo.aragon.mx/tags/linux/">Linux</a>&nbsp;
+      
+      #<a href="https://pablo.aragon.mx/tags/samba/">Samba</a>&nbsp;
+      
+      #<a href="https://pablo.aragon.mx/tags/metasploit/">Metasploit</a>&nbsp;
+      
+    </span>
+  
+  
+
+
+  
+
+  <div class="post-content"><div>
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl"><span class="c1"># Escaneo rápido de puertos</span>
+</span></span><span class="line"><span class="ln">2</span><span class="cl">$ nmap -sC -sV -oA nmap/lame 10.10.10.3
+</span></span><span class="line"><span class="ln">3</span><span class="cl">
+</span></span><span class="line"><span class="ln">4</span><span class="cl">PORT    STATE SERVICE      VERSION
+</span></span><span class="line"><span class="ln">5</span><span class="cl">21/tcp  open  ftp          vsftpd 2.3.4
+</span></span><span class="line"><span class="ln">6</span><span class="cl">22/tcp  open  ssh          OpenSSH 4.7p1 Debian 8ubuntu1 <span class="o">(</span>protocol 2.0<span class="o">)</span>
+</span></span><span class="line"><span class="ln">7</span><span class="cl">139/tcp open  netbios-ssn  Samba smbd 3.X - 4.X <span class="o">(</span>workgroup: WORKGROUP<span class="o">)</span>
+</span></span><span class="line"><span class="ln">8</span><span class="cl">445/tcp open  microsoft-ds Samba smbd 3.0.20-Debian <span class="o">(</span>workgroup: WORKGROUP<span class="o">)</span>
+</span></span></code></pre></div>
+      </div></div>
+
+  
+
+  
+    
+
+  
+</article>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright">
+        <span>© 2026 Powered by <a href="https://gohugo.io">Hugo</a></span>
+    
+      <span>:: <a href="https://github.com/panr/hugo-theme-terminal" target="_blank">Theme</a> made by <a href="https://github.com/panr" target="_blank">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+
+
+
+
+
+<script type="text/javascript" src="../../../bundle.min.js"></script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>

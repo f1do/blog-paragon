@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Mi experiencia Paragon</title>
+    <link>https://pablo.aragon.mx/tags/</link>
+    <description>Recent content in Tags on Mi experiencia Paragon</description>
+    <generator>Hugo</generator>
+    <language>es-es</language>
+    <lastBuildDate>Tue, 03 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://pablo.aragon.mx/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linux</title>
+      <link>https://pablo.aragon.mx/tags/linux/</link>
+      <pubDate>Tue, 03 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://pablo.aragon.mx/tags/linux/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Metasploit</title>
+      <link>https://pablo.aragon.mx/tags/metasploit/</link>
+      <pubDate>Tue, 03 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://pablo.aragon.mx/tags/metasploit/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Retired</title>
+      <link>https://pablo.aragon.mx/tags/retired/</link>
+      <pubDate>Tue, 03 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://pablo.aragon.mx/tags/retired/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Samba</title>
+      <link>https://pablo.aragon.mx/tags/samba/</link>
+      <pubDate>Tue, 03 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://pablo.aragon.mx/tags/samba/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
