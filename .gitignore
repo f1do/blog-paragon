@@ -1,0 +1,10 @@
+# Directorio de salida
+public/
+resources/
+# Archivos temporales de Hugo
+.hugo_build.lock
+# Configuración local de VS Code
+.vscode/
+# Logs de error
+*.log
+*.sh

@@ -5,10 +5,30 @@ theme = 'terminal'
 relativeURLs = true
 canonifyURLs = false
 [params]
-  author = 'Pablo Aragón'
+  author = 'paragon'
   showMenuItems = 2
-  fullWidthTheme = true
+  fullWidthTheme = false
   centerTheme = true
+  showFullContent = false
+  ReadMore = 'ver más.'
 [caches]
   [caches.images]
     dir = ':cacheDir/images'
+[markup]
+  [markup.highlight]
+    # 1. Estilo de colores (Monokai es el clásico de hackers)
+    style = "monokai"
+    lineNos = true
+    lineNumbersInTable = false
+    noClasses = false
+[[menu.main]]
+  identifier = "about"
+  name = "Acerca"
+  url = "/about/"
+  weight = 20
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+  series = "series"
+  difficulty = "difficulty"  # Nueva taxonomía para HTB
+  os = "os"                  # Nueva taxonomía para HTB
