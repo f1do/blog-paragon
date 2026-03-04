@@ -41,25 +41,3 @@ He aquí una vista rápida de mis habilidades y herramientas habituales, optimiz
 |__ Bash                             # Administración de sistemas y pipelines de CI/CD
 ```
 
-
-### 🔑 [Public_PGP_Key]
-<details>
-<summary>Click para desplegar mi huella digital</summary>
-
-```text
------BEGIN PGP PUBLIC KEY BLOCK-----
-
-mDMEaaefShYJKwYBBAHaRw8BAQdAXlL0UVuawrvZzSe5EEe3ocQOgE4u05rRHW48
-0OZJD+a0YlBhYmxvIEFyYWfDs24gKExvIHF1ZSBubyBzZSBkb2N1bWVudGEsIHNl
-IG9sdmlkYS4gTG8gcXVlIHNlIGNvbXBhcnRlLCBzZSBxdWVkYS4pIDxwYWJsb0Bh
-cmFnb24ubXg+iJAEExYKADgWIQQXftZlN+BIkoD/0U9ahKtMyAphTAUCaaefSgIb
-AwULCQgHAgYVCgkICwIEFgIDAQIeAQIXgAAKCRBahKtMyAphTISHAP9wgOg3C5iM
-Qlbyr/EwaO1xHld7Tbxu9qRBK9Z0/j4EOAD9FypbM83nY4Y6DIo+7MfgItKk8YNJ
-tsPPbHwgfKwL6w+4OARpp59KEgorBgEEAZdVAQUBAQdAzBa4+dy9hThgANMxsKmk
-F9+tHkE6DKhpW9TURfdJ53EDAQgHiHgEGBYKACAWIQQXftZlN+BIkoD/0U9ahKtM
-yAphTAUCaaefSgIbDAAKCRBahKtMyAphTCTLAP40wRYb/LjmbIGkPrfWiQiKSNkC
-rWttVPrgsH8ZhRO+rwEA22b3r98tciudCw6Q4aUR40buUVcc+k+TyPxGUqUqWQQ=
-=pGr5
------END PGP PUBLIC KEY BLOCK-----
-```
-</details>

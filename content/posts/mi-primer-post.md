@@ -1,13 +1,13 @@
 +++
 date = '2026-03-02T23:06:03-06:00'
-draft = true
+draft = false
 author = 'paragon'
 title = 'Mi Primer Post'
 +++
 
 
 ```python
-# Test de Treesitter en Arch
+# Test de colores
 def pwn_logic(target_ip):
     try:
         print(f"[!] Iniciando secuencia en {target_ip}")
