@@ -1,35 +1,34 @@
 ---
-# Título del post: {{ replace .Name "-" " " | title }}
-title: "HTB Write-up | {{ .Name | title }}"
+title: 'HTB: {{ replace .Name "-" " " | title }}'
 date: {{ .Date }}
-draft: false
-author: "Paragon"
+draft: true
+description: 'Write-up de la máquina {{ replace .Name "-" " " | title }} de HackTheBox.'
+image: 'img/htb-{{ .Name }}.png'
 
-# Metadatos para la lista del blog (Taxonomías)
-# categories: ["HackTheBox"]
-tags: ["Retired", "CTF"] # Exploit, ActiveDirectory, SQLi, BufferOverflow, etc.
+# Taxonomías
+categories: ["Write-ups"]
+tags: ["HTB", "Pentesting"]
+difficulty: 'Easy'
+os: 'Linux'
 
-# Metadatos Específicos de la Máquina
-difficulty: "Easy" # Easy, Medium, Hard, Insane
-os: "Linux" # Linux, Windows, Unix
-ip_address: "10.10.x.x"
-score: "Retired" # Retired, Active
-release_date: ""
+# Metadatos de la máquina
+machine_ip: '10.10.10.X'
+vulnerabilities: ["IDOR", "PCAP Analysis", "Capabilities"]
 ---
 
-## 🚩 [SYSTEM_INIT] > CHALLENGE_SUMMARY
+### 💻 [Detalles] > Resumen de la máquina
 
-**Máquina:** {{ .Name | title }}
-**Sistema Operativo:** {{ .Params.os }}
-**Dificultad:** {{ .Params.difficulty }}
-**IP:** `{{ .Params.ip_address }}`
+`Máquina:` {{ .Name | title }}
+`Sistema Operativo:` OS
+`Dificultad:` Easy
+`IP:` 10.10.X.X
 
----
 
-## 🛠️ [STAGE_1] > Enumeration
+## 📔 Resumen
+Breve descripción de la máquina y qué vamos a aprender.
 
-Empezamos escaneando el objetivo con **Nmap** para descubrir servicios y puertos abiertos.
-
-### $ nmap -sC -sV -T4 {{ .Params.ip_address }}
+## 📑 Enumeración (Recon)
+### Nmap
 ```bash
-# Pega aquí el output de tu escaneo de Nmap
+sudo nmap -sCV -p- --open -T4 10.10.10.X -oN nmap_scan
+

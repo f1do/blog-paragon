@@ -4,6 +4,7 @@ title = 'Mi experiencia Paragon'
 theme = 'terminal'
 relativeURLs = true
 canonifyURLs = false
+autoCover = true
 [params]
   author = 'paragon'
   showMenuItems = 2

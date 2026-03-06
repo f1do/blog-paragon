@@ -23,8 +23,8 @@ Actualmente, dedico mi tiempo a documentar y compartir soluciones técnicas para
 
 He aquí una vista rápida de mis habilidades y herramientas habituales, optimizadas para entornos de desarrollo seguro (SecDevOps):
 
-### $ Lenguajes --lista
-```bash
+### $ Detalle --lenguages/tecnologías
+```
 ### $ stack --enterprise-integration
 |__ ESQL (IBM WMB, IIB, ACE) & APIM  # Especialista en Middleware y capas de integración
 |__ Java & C#                        # Desarrollo robusto orientado a objetos (Backend/Legacy)

@@ -2,25 +2,52 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://pablo.aragon.mx/tags/capabilities/</loc>
+    <lastmod>2026-03-03T23:41:56-06:00</lastmod>
+  </url><url>
+    <loc>https://pablo.aragon.mx/categories/</loc>
+    <lastmod>2026-03-03T23:41:56-06:00</lastmod>
+  </url><url>
+    <loc>https://pablo.aragon.mx/difficulty/</loc>
+    <lastmod>2026-03-03T23:41:56-06:00</lastmod>
+  </url><url>
+    <loc>https://pablo.aragon.mx/difficulty/easy/</loc>
+    <lastmod>2026-03-03T23:41:56-06:00</lastmod>
+  </url><url>
+    <loc>https://pablo.aragon.mx/tags/htb/</loc>
+    <lastmod>2026-03-03T23:41:56-06:00</lastmod>
+  </url><url>
+    <loc>https://pablo.aragon.mx/posts/cap/</loc>
+    <lastmod>2026-03-03T23:41:56-06:00</lastmod>
+  </url><url>
+    <loc>https://pablo.aragon.mx/tags/idor/</loc>
+    <lastmod>2026-03-03T23:41:56-06:00</lastmod>
+  </url><url>
+    <loc>https://pablo.aragon.mx/os/linux/</loc>
+    <lastmod>2026-03-03T23:41:56-06:00</lastmod>
+  </url><url>
     <loc>https://pablo.aragon.mx/</loc>
-    <lastmod>2026-03-02T23:06:03-06:00</lastmod>
+    <lastmod>2026-03-03T23:41:56-06:00</lastmod>
+  </url><url>
+    <loc>https://pablo.aragon.mx/os/</loc>
+    <lastmod>2026-03-03T23:41:56-06:00</lastmod>
+  </url><url>
+    <loc>https://pablo.aragon.mx/tags/pentesting/</loc>
+    <lastmod>2026-03-03T23:41:56-06:00</lastmod>
+  </url><url>
+    <loc>https://pablo.aragon.mx/posts/</loc>
+    <lastmod>2026-03-03T23:41:56-06:00</lastmod>
+  </url><url>
+    <loc>https://pablo.aragon.mx/tags/</loc>
+    <lastmod>2026-03-03T23:41:56-06:00</lastmod>
+  </url><url>
+    <loc>https://pablo.aragon.mx/categories/write-ups/</loc>
+    <lastmod>2026-03-03T23:41:56-06:00</lastmod>
   </url><url>
     <loc>https://pablo.aragon.mx/posts/mi-primer-post/</loc>
     <lastmod>2026-03-02T23:06:03-06:00</lastmod>
   </url><url>
-    <loc>https://pablo.aragon.mx/posts/</loc>
-    <lastmod>2026-03-02T23:06:03-06:00</lastmod>
-  </url><url>
-    <loc>https://pablo.aragon.mx/difficulty/</loc>
-    <lastmod>2026-03-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://pablo.aragon.mx/difficulty/easy/</loc>
-    <lastmod>2026-03-03T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://pablo.aragon.mx/posts/htb/lame-writeup/</loc>
-    <lastmod>2026-03-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://pablo.aragon.mx/os/linux/</loc>
     <lastmod>2026-03-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://pablo.aragon.mx/tags/linux/</loc>
@@ -29,22 +56,14 @@
     <loc>https://pablo.aragon.mx/tags/metasploit/</loc>
     <lastmod>2026-03-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://pablo.aragon.mx/os/</loc>
-    <lastmod>2026-03-03T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://pablo.aragon.mx/tags/retired/</loc>
     <lastmod>2026-03-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://pablo.aragon.mx/tags/samba/</loc>
     <lastmod>2026-03-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://pablo.aragon.mx/tags/</loc>
-    <lastmod>2026-03-03T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://pablo.aragon.mx/about/</loc>
     <lastmod>2026-03-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://pablo.aragon.mx/categories/</loc>
   </url><url>
     <loc>https://pablo.aragon.mx/series/</loc>
   </url>
